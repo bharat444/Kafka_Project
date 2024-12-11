@@ -115,7 +115,7 @@ Summary Table: Daily summary of stock metrics (e.g., average price, total volume
 - Bharat Dhungana
 - Satish Koirala
 - Bikash Thapa Magar
-- Samir Bhattarai
+- Samir Bhandari
 - Aravind 
 
 This project is licensed under the MIT License - see the LICENSE file for details.
