@@ -2,7 +2,8 @@
 
 In today’s fast-paced financial markets, having access to real-time stock data is crucial for traders, analysts, and investors. Streaming this data efficiently and reliably can be challenging. However, with the power of Python and Apache Kafka, you can easily set up a data streaming pipeline to capture, process, and analyze real-time stock data.
 
-**Why Use Kafka for Real-Time Data?**
+
+**1. Why Use Kafka for Real-Time Data?**
 
 Apache Kafka is a distributed streaming platform for building real-time data pipelines. 
 It offers several advantages for streaming real-time stock data:
@@ -15,11 +16,13 @@ Reliability: It ensures data integrity, even in hardware failures or network iss
 
 Publish-Subscribe Model: Kafka’s pub-sub architecture allows multiple consumers to subscribe to real-time data streams simultaneously.
 
-**Project Overview**
+
+**2. Project Overview**
 
 This project demonstrates the implementation of a real-time data pipeline for stock price analysis using Confluent Kafka, Databricks, PySpark, and Delta Lake. It ingests live or simulated stock price data via Kafka, processes it using Databricks, calculates key stock metrics (like moving averages and volatility), and provides real-time alerts. The processed data is stored in Delta tables for easy querying, with an interactive dashboard for visualizing stock trends and metrics.
 
-**Technologies Used**
+
+**3. Technologies Used**
 
 Confluent Kafka: For real-time data streaming and message delivery.
 
@@ -33,7 +36,8 @@ PySpark: For processing the data and calculating metrics.
 
 Databricks Notebooks: For visualizing the data and creating dashboards.
 
-**Features**
+
+**4. Features**
 
 Real-Time Stock Price Streaming: Stream live or simulated stock data using Kafka.
 
@@ -49,7 +53,8 @@ Stock Symbol Filtering: Filter stock data by symbol (e.g., MSFT, AMZN, AAPL, GOO
 
 Daily Summary Metrics: Display average closing prices and total volumes per day.
 
-**System Architecture:**
+
+**5. System Architecture:**
 
 Kafka Producer: Generates synthetic stock price data and sends it to a Kafka topic.
 
@@ -59,7 +64,8 @@ Databricks: Uses PySpark to process and analyze the stock data, including calcul
 
 Dashboard: Displays visualizations such as bar charts, pie charts, and time series graphs for real-time stock analysis.
 
-**Setup & Installation**
+
+**6. Setup & Installation**
 
 1. Kafka Setup: You need to have Apache Kafka and Confluent running to simulate the real-time data streaming.
 
@@ -75,7 +81,8 @@ Dashboard: Displays visualizations such as bar charts, pie charts, and time seri
 
 ![image](https://github.com/user-attachments/assets/ceb6c155-fe00-4fbd-b7e5-db25bb01914e)
 
-**Insights**
+
+**7. Insights**
 
 ● Bar Chart (Top Left): Shows the total trading volume for stocks (AAPL, AMZN, GOOG, MSFT), identifying the most actively traded stock.
 
@@ -92,7 +99,7 @@ Dashboard: Displays visualizations such as bar charts, pie charts, and time seri
 ● Raw Data Table (Bottom Right Corner): Displays unprocessed stock data like Open, High, and Volume for analysis.
 
 
-**Example Output**
+**8. Example Output**
 
 Real-Time Stock Price Chart: A live feed showing stock prices as they change in real-time.
 
@@ -102,7 +109,8 @@ Alerts: Notifications when stock price changes exceed a threshold (e.g., 1%).
 
 Summary Table: Daily summary of stock metrics (e.g., average price, total volume).
 
-**Contributors**
+
+**9. Contributors**
 
 - Bharat Dhungana
 - Satish Koirala
@@ -112,7 +120,8 @@ Summary Table: Daily summary of stock metrics (e.g., average price, total volume
 
 This project is licensed under the MIT License - see the LICENSE file for details.
 
-**Future Work**
+
+**10. Future Work**
 
 Extend the project to support more stock symbols.
 
